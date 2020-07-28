@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "MMP_SDKTEST2" 	#pod名称
-  spec.version      = "1.1.1"										#pod版本
+  spec.version      = "1.1.2"										#pod版本
   spec.summary      = "用于pod FaceID MegviiStill活体验证 SDK"	#简介，需要更改，不然会报警告
 
   # This description is used to generate tags and improve search results.
@@ -95,7 +95,7 @@ SDK说明：SDK支持的系统最低要求是iOS 8.0，只支持真机架构(arm
 
   #写下你代码的位置, 也可以在后面指定.{h,m,swift},如果多个逗号隔开,swift提供对外的class与method建议加上public
   spec.vendored_frameworks = "sdk/framework/MGFaceIDIDCardKit.framework" ,"sdk/framework/MGFaceIDIDCardKernelKit.framework" , "sdk/framework/MGFaceIDBaseKit.framework"
-  spec.source_files  = 'sdk/framework/MGFaceIDIDCardKit.framework/Headers/**/*.h','sdk/framework/MGFaceIDIDCardKernelKit.framework/Headers/**/*.h','sdk/framework/MGFaceIDBaseKit.framework/Headers/**/*.h'
+  # spec.source_files  = 'sdk/framework/MGFaceIDIDCardKit.framework/Headers/**/*.h','sdk/framework/MGFaceIDIDCardKernelKit.framework/Headers/**/*.h','sdk/framework/MGFaceIDBaseKit.framework/Headers/**/*.h'
   #排除的文件.
   #spec.exclude_files = "Classes/Exclude"
 
@@ -125,7 +125,7 @@ SDK说明：SDK支持的系统最低要求是iOS 8.0，只支持真机架构(arm
   #
 
   # spec.framework  = "SomeFramework"
-  spec.frameworks = "AVFoundation", "CoreMotion", "CoreMedia", "SystemConfiguration"
+  spec.frameworks = "AVFoundation","CoreMedia"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
